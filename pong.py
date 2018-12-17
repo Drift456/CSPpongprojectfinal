@@ -19,9 +19,9 @@ def move_down(event):
     print(event)
 
 def draw_bat():
-    sense.set_pixel(0, y, 255, 255, 255)
-    sense.set_pixel(0, y+1, 255, 255, 255)
-    sense.set_pixel(0, y-1, 255, 255, 255)
+    sense.set_pixel(0, y, 0, 255, 255)
+    sense.set_pixel(0, y+1, 0, 255, 255)
+    sense.set_pixel(0, y-1, 0, 255, 255)
         
 def ball_play():
     sense.set_pixel(ball_position[0], ball_position[1], 0, 0, 0)
@@ -46,9 +46,9 @@ def ball_play():
 sense.stick.direction_up = move_up
 sense.stick.direction_down = move_down
 
-while ball_playl():
+while ball_play():
     draw_bat()
     sleep(0.25)
     sense.clear(0, 0, 0)
     
-sense.show_message("You Lose", text_colour=(255, 0, 0))
+sense.show_message(" 00f u lose ", text_colour=(69, 69, 69))
